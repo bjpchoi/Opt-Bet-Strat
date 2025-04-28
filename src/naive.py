@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 
-class BettingStrategies:
+class NaiveBettingStrategies:
     def __init__(self):
         pass
 
