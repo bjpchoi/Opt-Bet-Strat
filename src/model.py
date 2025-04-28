@@ -55,10 +55,10 @@ class ModelSelector:
             "SVR": SVR(C=2.0, gamma="scale"),
             "RF": RandomForestRegressor(n_estimators=300, min_samples_leaf=25, n_jobs=-1),
             "ADA": AdaBoostRegressor(n_estimators=400, learning_rate=0.05),
-            "MLP": MLPRegressor(hidden_layer_sizes=(64,32), alpha=1e-3, max_iter=400),
-            "XGB": xgb.XGBRegressor(max_depth=5, learning_rate=0.1, n_estimators=500),
-            "LGBM": lgb.LGBMRegressor(max_depth=5, learning_rate=0.1, n_estimators=500),
-            "CAT": cb.CatBoostRegressor(depth=5, learning_rate=0.1, iterations=500, verbose=False)
+            "MLP": MLPRegressor(hidden_layer_sizes=(64,32), alpha=1e-3, max_iter=400)#,
+            #"XGB": xgb.XGBRegressor(max_depth=5, learning_rate=0.1, n_estimators=500),
+            #"LGBM": lgb.LGBMRegressor(max_depth=5, learning_rate=0.1, n_estimators=500),
+            #"CAT": cb.CatBoostRegressor(depth=5, learning_rate=0.1, iterations=500, verbose=False)
         }
         return base_models
 
